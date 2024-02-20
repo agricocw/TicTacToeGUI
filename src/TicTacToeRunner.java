@@ -34,11 +34,11 @@ public class TicTacToeRunner {
         for (int row = 0; row < ROW; row++) {
             for (int col = 0; col < COL; col++) {
                 if (board[row][col].equals(" ")) {
-                    return false; // Found an empty cell, game is not a tie yet
+                    return false;
                 }
             }
         }
-        return true; // All cells are filled, game is a tie
+        return true;
     }
 
     private boolean isValidMove(int row, int col) {
